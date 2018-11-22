@@ -1,4 +1,4 @@
-atobUTF8 = (function(){
+var atobUTF8 = (function(){
 	"use strict";
 	var log = Math.log;
 	var LN2 = Math.LN2;
