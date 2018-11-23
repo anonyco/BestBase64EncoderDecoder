@@ -38,7 +38,10 @@ Enter text into the top box. Then the URL will update automatically.
             if (match.startsWith("\\0") && match.length > 2)
               return fromCodePoint(parseInt(match.substring(2),8));
             if (/^\\\d/.test(match)) return fromCodePoint(+match.slice(1));
-          }catch(e){return "\ufffd".repeat(match.length)}
+          }catch(e){
+	  	for (var str="", i=match.length; i--; ) str += match.charAt(i);
+		return str;
+	  }
           return parse('"' + match + '"');
         });
     }
