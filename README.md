@@ -1,6 +1,6 @@
 # BestBase64EncoderDecoder
 
-(from https://stackoverflow.com/posts/53433503/edit)
+(from https://stackoverflow.com/a/53433503/5601591)
 
 I would assume that one might want it base64 encoded in a more standard way than other solutions that attempt to address this problem. This "standard" way is naturally interpretable by the browser such that you can use the base64 in a data URI. Please visit this data URI here to see a demonstration: `data:text/plain;base64,4pi44pi54pi64pi74pi84pi+4pi/` (copy the data uri, open a new tab, paste the data URI into the address bar, then press enter to go to the page). As you can see, despite the fact that it is a base64-encoded URL, the browser is still able to recognize the high code points and decode them properly. Thus, this demonstration proves that this is the best way to go because it is the most W3C standard. Then, to decode the base64 data, either HTTP get the data as a data URI or use the function below. The advantage of being more standard is that this encoder and this decoder are more widely applicable because they can be used as a valid URL that displays correctly. 
 
