@@ -49,4 +49,4 @@ Then, here is the node API:
     * Decodes the base64 string `encodedBase64String` into its original UTF8 binary counterpart.
     * `keepBOM` will keep the BOM of the string. Use this option if you are certain that the original UTF8 string was raw binary data. Keep this option false if you used the `autoBOMit` option when encoding the string.
 
-Enjoy! (If you are using SpiderNode. Otherwise, burn in hell beside me for using NodeJS. Lol. JK, not really....I'm very serious)
+Enjoy!
