@@ -35,10 +35,18 @@ In addition to being very standardized, the above code snippets are also very fa
 # SpiderNode (Hooray!) / NodeJS (Booo!)
 
 Simply drop the file [`atobAndBtoaTogether.node.js`](https://github.com/anonyco/BestBase64EncoderDecoder/blob/master/atobAndBtoaTogether.node.js) into the same folder as your Javascript node file. Then, add the following to the Javascript to the node file:
-(`atobAndBtoaTogether.node.js`)[https://github.com/anonyco/BestBase64EncoderDecoder/blob/master/atobAndBtoaTogether.node.js]
 
+```Javascript
+var AtobAndBtoaTogether = require("./atobAndBtoaTogether.node.js");
+```
 
+Then, here is the node API:
+* /**String*/ AtobAndBtoaTogether.btoaUTF8(/**String*/ originalString, /**boolean*/ autoBOMit = false)
+    * Encodes the binary string `originalString` into valid base 64. 
+    * `autoBOMit` determines whether to append a BOM on to the end of the string. Only use this when the base64 is to be used as  a data URI link. If you have no idea what this means and are confused, then simply ignore this option and it should not give you any problems.
 
+* /**String*/ AtobAndBtoaTogether.atobUTF8(/**String*/ encodedBase64String, /**boolean*/ keepBOM = false)
+    * Decodes the base64 string `encodedBase64String` into its original UTF8 binary counterpart.
+    * `keepBOM` will keep the BOM of the string. Use this option if you are certain that the original UTF8 string was raw binary data. Keep this option false if you used the `autoBOMit` option when encoding the string.
 
-
-
+Enjoy! (If you are using SpiderNode. Otherwise, burn in hell beside me for using NodeJS. Lol. JK, not really....I'm very serious)
