@@ -1,3 +1,28 @@
+# Quick Start
+
+Add the following HTML Code to your head:
+
+````HTML
+<script src="https://www.dropbox.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?raw=1" type="text/javascript"></script>
+````
+
+If you know that nothing on the page loads until the DOMContentLoaded event, then you can switch to the much faster version below:
+
+````HTML
+<script src="https://www.dropbox.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?raw=1" type="text/javascript" defer=""></script>
+````
+
+There are two separate API functions introduced by the library:
+
+* /**String*/ btoaUTF8(/**String*/ originalString, /**boolean*/ autoBOMit = false)
+    * Encodes the binary string `originalString` into valid base 64. 
+    * `autoBOMit` determines whether to append a BOM on to the end of the string. Only use this when the base64 is to be used as  a data URI link. If you have no idea what this means and are confused, then simply ignore this option and it should not give you any problems.
+
+* /**String*/ atobUTF8(/**String*/ encodedBase64String, /**boolean*/ keepBOM = false)
+    * Decodes the base64 string `encodedBase64String` into its original UTF8 binary counterpart.
+    * `keepBOM` will keep the BOM of the string. Use this option if you are certain that the original UTF8 string was raw binary data. Keep this option false if you used the `autoBOMit` option when encoding the string.
+
+
 # BestBase64EncoderDecoder
 
 I would assume that one might want it base64 encoded in a more standard way than other solutions that attempt to address this problem. This "standard" way is naturally interpretable by the browser such that you can use the base64 in a data URI. Please visit this data URI here to see a demonstration: `data:text/plain;base64,4pi44pi54pi64pi74pi84pi+4pi/` (copy the data uri, open a new tab, paste the data URI into the address bar, then press enter to go to the page). As you can see, despite the fact that it is a base64-encoded URL, the browser is still able to recognize the high code points and decode them properly. Thus, this demonstration proves that this is the best way to go because it is the most W3C standard. Then, to decode the base64 data, either HTTP get the data as a data URI or use the function below. The advantage of being more standard is that this encoder and this decoder are more widely applicable because they can be used as a valid URL that displays correctly. 
@@ -6,3 +31,14 @@ In addition to being very standardized, the above code snippets are also very fa
 
 (see also https://stackoverflow.com/a/53433503/5601591)<br />
 (see also [The MDN Page Base64_encoding_and_decoding](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding#Solution_1_%E2%80%93UTF-16_%3E_binary_UTF8-in-16))
+
+# SpiderNode (Hooray!) / NodeJS (Booo!)
+
+Simply drop the file [`atobAndBtoaTogether.node.js`](https://github.com/anonyco/BestBase64EncoderDecoder/blob/master/atobAndBtoaTogether.node.js) into the same folder as your Javascript node file. Then, add the following to the Javascript to the node file:
+(`atobAndBtoaTogether.node.js`)[https://github.com/anonyco/BestBase64EncoderDecoder/blob/master/atobAndBtoaTogether.node.js]
+
+
+
+
+
+
