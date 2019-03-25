@@ -1,0 +1,23 @@
+{
+  "name": "bestbase64utf8",
+  "version": "1.0.0",
+  "description": "The most standard, most cross-browser, most compact, and fastest possible btoa and atob solution for unicode strings with high code points. Made by AnonyCo with ❤️ from 🐕s.",
+  "keywords": ["btoa", "atob", "utf8", "utf-8", "base64", "javascript", "browser", "node", "node.js", "nodejs", "library", "1kb", "fast", "performance"],
+  "homepage": "https://github.com/anonyco/BestBase64EncoderDecoder#quick-start",
+  "bugs": {
+    "url" : "https://github.com/anonyco/BestBase64EncoderDecoder/issues",
+    "email" : "wowzeryest@gmail.com"
+  },
+  "liscence": "Unlicense",
+  "author": {
+    "name" : "Jack Giffin",
+    "email" : "wowzeryest@gmail.com",
+    "url" : "http://barnyrubble.tumblr.com/"
+  },
+  "main": "atobAndBtoaTogether.node.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/anonyco/BestBase64EncoderDecoder.git"
+  },
+  "files": ["atobAndBtoaTogether.node.js"]
+}
