@@ -1,3 +1,8 @@
+[![npm version](http://img.shields.io/npm/v/bestbase64utf8.svg?style=flat)](https://npmjs.org/package/bestbase64utf8 "View this project on npm")
+![npm downloads](https://img.shields.io/npm/dm/bestbase64utf8.svg)
+[![Issues](http://img.shields.io/github/issues/anonyco/BestBase64EncoderDecoder.svg)]( https://github.com/anonyco/BestBase64EncoderDecoder/issues )
+[![Unlicense license](http://img.shields.io/badge/license-Unlicense-brightgreen.svg)](https://unlicense.org/)
+
 # Quick Start
 
 Add the following HTML Code to your head:
