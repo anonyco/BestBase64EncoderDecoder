@@ -1,5 +1,5 @@
 "use strict";
-module.exports = (() => {
+module["exports"] = (() => {
 	"use strict";
 	const log = Math.log;
 	const LN2 = Math.LN2;
@@ -26,7 +26,7 @@ module.exports = (() => {
 					);
 			} else return fromCharCode(0xef, 0xbf, 0xbd);
 		}
-		if (point <= 0x007f) return inputString;
+		if (point <= 0x007f) return nonAsciiChars;
 		else if (point <= 0x07ff) {
 			return fromCharCode((0x6<<5)|(point>>>6), (0x2<<6)|(point&0x3f));
 		} else return fromCharCode(
