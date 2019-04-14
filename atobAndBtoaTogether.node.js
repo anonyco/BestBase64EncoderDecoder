@@ -1,5 +1,10 @@
-"use strict";
-module["exports"] = (() => {
+// ==ClosureCompiler==
+// @compilation_level ADVANCED_OPTIMIZATIONS
+// @js_externs var define;
+// @js_externs var exports;
+// @language_out ECMASCRIPT_2015
+// ==/ClosureCompiler==
+(global => {
 	"use strict";
 	const log = Math.log;
 	const LN2 = Math.LN2;
@@ -38,7 +43,10 @@ module["exports"] = (() => {
 	const btoaUTF8 = (inputString, BOMit) => {
 		return originalBtoa((BOMit ? "\xEF\xBB\xBF" : "") + inputString.replace(
 			/[\x80-\uD7ff\uDC00-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]?/g, btoaReplacer
-		));
+		));// ==ClosureCompiler==
+// @compilation_level SIMPLE_OPTIMIZATIONS
+// @output_file_name default.js
+// ==/ClosureCompiler==
 	}
 	//////////////////////////////////////////////////////////////////////////////////////
 	const atobReplacer = encoded => {
@@ -72,8 +80,8 @@ module["exports"] = (() => {
 		// 0x80 => 0b10000000; 0xbf => 0b10111111; 0x80-0xbf => 0b10xxxxxx
 		return originalAtob(inputString).replace(/[\xc0-\xff][\x80-\xbf]*/g, atobReplacer);
 	};
-	return {
-		"btoaUTF8": btoaUTF8,
-		"atobUTF8": atobUTF8
-	};
-})();
+	const factory = o => (o["btoaUTF8"] = btoaUTF8, o["atobUTF8"] = atobUTF8, o);
+	
+	typeof define === typeof factory && define["amd"] ? define(() => factory({})) :
+	factory(typeof exports === 'object' ? exports : global);
+})(this);
