@@ -14,11 +14,11 @@
     "email" : "wowzeryest@gmail.com",
     "url" : "https://jackgiffin.com/"
   },
-  "main": "atobAndBtoaTogether.node.js",
+  "main": "atobAndBtoaTogether.node.min.js",
   "repository": {
     "type" : "git",
     "url" : "https://github.com/anonyco/BestBase64EncoderDecoder.git"
   },
-  "files": ["atobAndBtoaTogether.node.js"]
+  "files": ["atobAndBtoaTogether.node.min.js", ,"atobAndBtoaTogether.min.js"]
 }
 
