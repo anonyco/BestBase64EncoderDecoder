@@ -19,6 +19,6 @@
     "type" : "git",
     "url" : "https://github.com/anonyco/BestBase64EncoderDecoder.git"
   },
-  "files": ["atobAndBtoaTogether.node.min.js", ,"atobAndBtoaTogether.min.js"]
+  "files": ["atobAndBtoaTogether.node.min.js", "atobAndBtoaTogether.min.js"]
 }
 
