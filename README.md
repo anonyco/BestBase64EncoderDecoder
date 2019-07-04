@@ -7,7 +7,7 @@
 [![Unlicense license](http://img.shields.io/badge/license-Unlicense-brightgreen.svg)](https://unlicense.org/)
 [![npm downloads](https://img.shields.io/npm/dt/bestbase64utf8.svg)](https://npmjs.org/package/bestbase64utf8 "View this project on npm")
 
-# Quick Start
+## Quick Start
 
 Add the following HTML Code to your head:
 
@@ -21,6 +21,8 @@ If you know that no script on the page requires this library until the DOMConten
 <script defer="" src="https://www.dropbox.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?raw=1" type="text/javascript"></script>
 ````
 
+## API Documentation
+
 There are two separate API functions introduced by the library:
 
 * `/*String*/ btoaUTF8(/*String*/ originalString, /*boolean*/ autoBOMit = false)`
@@ -32,7 +34,7 @@ There are two separate API functions introduced by the library:
     * `keepBOM` will keep the BOM of the string. Set this option to true if you are certain that the original UTF8 string was raw binary data. Keep this option false if you used the `autoBOMit` option when encoding the string.
 
 
-# BestBase64EncoderDecoder
+## BestBase64EncoderDecoder
 
 I would assume that one might want it base64 encoded in a more standard way than other solutions that attempt to address this problem. This "standard" way is naturally interpretable by the browser such that you can use the base64 in a data URI. Please visit this data URI here to see a demonstration: `data:text/plain;charset=utf-8;base64,4pi44pi54pi64pi74pi84pi+4pi/` (copy the data uri, open a new tab, paste the data URI into the address bar, then press enter to go to the page). As you can see, despite the fact that it is a base64-encoded URL, the browser is still able to recognize the high code points and decode them properly. Thus, this demonstration proves that this is the best way to go because it is the most standard. Then, to decode the base64 data, either HTTP get the data as a data URI or use the `atobUTF8` function. The advantage of being more standard is that this encoder and this decoder are more widely applicable because they can be used as a valid URL that displays correctly. Please visit [this demo page](https://anonyco.github.io/BestBase64EncoderDecoder/demo.html) to see the generation of unicode base64.
 
@@ -42,7 +44,7 @@ In addition to being very standardized, the above code snippets are also very fa
 (see also [The MDN Page Base64_encoding_and_decoding](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding#Solution_1_%E2%80%93UTF-16_%3E_binary_UTF8-in-16))
 
 
-# Example Usage
+## Example Usage
 
 The below code snippet was taken from the [demonstration page](https://github.com/anonyco/BestBase64EncoderDecoder/blob/master/demo.html). This demonstration page can be viewed live [here via Github Pages](https://anonyco.github.io/BestBase64EncoderDecoder/demo.html).
 
@@ -95,7 +97,7 @@ The below code snippet was taken from the [demonstration page](https://github.co
 ```
 
 
-# SpiderNode (Hooray!) / NodeJS (Booo!)
+## SpiderNode (Hooray!) / NodeJS (Booo!)
 
 Simply drop the file [`atobAndBtoaTogether.node.js`](https://github.com/anonyco/BestBase64EncoderDecoder/blob/master/atobAndBtoaTogether.node.js) into the same folder as your Javascript node file. Then, add the following to the Javascript in the SpiderNode/NodeJS file.
 
