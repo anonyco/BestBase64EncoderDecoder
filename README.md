@@ -97,7 +97,7 @@ The below code snippet was taken from the [demonstration page](https://github.co
 
 # SpiderNode (Hooray!) / NodeJS (Booo!)
 
-Simply drop the file [`atobAndBtoaTogether.node.js`](https://github.com/anonyco/BestBase64EncoderDecoder/blob/master/atobAndBtoaTogether.node.js) into the same folder as your Javascript node file. Then, add the following to the Javascript to the node file:
+Simply drop the file [`atobAndBtoaTogether.node.js`](https://github.com/anonyco/BestBase64EncoderDecoder/blob/master/atobAndBtoaTogether.node.js) into the same folder as your Javascript node file. Then, add the following to the Javascript in the SpiderNode/NodeJS file.
 
 ```Javascript
 var AtobAndBtoaTogether = require("./atobAndBtoaTogether.node.js");
