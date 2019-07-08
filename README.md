@@ -12,13 +12,13 @@
 Add the following HTML Code to your head:
 
 ````HTML
-<script src="https://www.dropbox.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?raw=1" type="text/javascript"></script>
+<script src="https://dl.dropboxusercontent.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?dl=0" type="text/javascript"></script>
 ````
 
 If you know that no script on the page requires this library until the DOMContentLoaded event, then you can switch to the much faster version below:
 
 ````HTML
-<script defer="" src="https://www.dropbox.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?raw=1" type="text/javascript"></script>
+<script defer="" src="https://dl.dropboxusercontent.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?dl=0" type="text/javascript"></script>
 ````
 
 ## API Documentation
