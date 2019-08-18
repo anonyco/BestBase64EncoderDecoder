@@ -15,7 +15,7 @@ Add the following HTML Code to your head:
 <script src="https://dl.dropboxusercontent.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?dl=0" type="text/javascript"></script>
 ````
 
-If you know that no script on the page requires this library until the DOMContentLoaded event, then you can switch to the much faster version below:
+If you know that no script on the page requires this library until the DOMContentLoaded event, then you can switch to the much faster (less blocking) version below:
 
 ````HTML
 <script defer="" src="https://dl.dropboxusercontent.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?dl=0" type="text/javascript"></script>
