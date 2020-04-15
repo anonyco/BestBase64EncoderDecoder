@@ -22,6 +22,20 @@ If you know that no script on the page requires this library until the DOMConten
 <script defer="" src="https://dl.dropboxusercontent.com/s/uo9kbpolhnat1cg/atobAndBtoaTogether.min.js?dl=0" type="text/javascript"></script>
 ````
 
+## npm Installation
+
+Run the following in the command line opened to the directory of your script.
+
+```Bash
+npm install bestbase64utf8
+```
+
+Alternatively, if one do not know how to use the command line, save the script corresponding to your operating system to the directory where the nodejs script will run and use the file manager to run the script (on Windows, it's a double-click).
+
+* Microsoft Windows batch: [install-BestBase64EncoderDecoder-windows.bat](https://raw.githubusercontent.com/anonyco/BestBase64EncoderDecoder/master/misc/install-BestBase64EncoderDecoder-windows.bat)
+* Bash for Apple MacOS and Linux (e.x. Ubuntu): [install-BestBase64EncoderDecoder-unix.sh](https://raw.githubusercontent.com/anonyco/BestBase64EncoderDecoder/master/misc/install-BestBase64EncoderDecoder-unix.sh)
+
+
 ## API Documentation
 
 There are two separate API functions introduced by the library:
